@@ -1,0 +1,15 @@
+:root {
+  /* Ativa o suporte para ambos os modos no navegador */
+  color-scheme: light dark; 
+  
+  /* Define as cores: light-dark(cor_clara, cor_escura) */
+  --cor-fundo: light-dark(#ffffff, #03a7f3);
+  --cor-texto: light-dark(#333333, #ffffff);
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s; /* Transição suave ao mudar */
+}
